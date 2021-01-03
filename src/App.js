@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Form from './Form'
+import Welcome from './Welcome'
+import Helmet from 'react-helmet'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Helmet>
+        <title>Going Public</title>
+        <meta name="description" content="Agence conseil en relations publiques" />
+        <link rel="shortcut icon" href='./favicon.png' />
+      </Helmet>
+      <Welcome />
+      <Form />
     </div>
   );
 }
 
-export default App;
+export default App
